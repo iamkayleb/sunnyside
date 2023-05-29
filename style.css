@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url('./images/desktop/image-header.jpg');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+
+}
+.motto {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Barlow';
+    letter-spacing: 0.1cm;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:  hsl(0, 0%, 100%);
+    padding-top: 20px;
+    padding-bottom: 50%;
+}
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Fraunces", sans-serif;
+    color:hsl(0, 0%, 100%) ;
+}
+.nav-items {
+    display: flex;
+    list-style: none;
+    color:hsl(0, 0%, 100%) ;
+    
+}
+.nav-item {
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+}
+.nav-item:hover {
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    
+
+}
+
+/* Main Styles */
+.card {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+}
+.card-text {
+    width: 50%;
+    padding:  100px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.card > img {
+    width: 50%;
+}
+.card-text h1{
+    font-size: 30px;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(212, 27%, 19%);
+    padding: 10px;
+    font-family: "Barlow";
+}
+.card-text p {
+    font-size: 20px;
+    font-weight: 400;
+    font-weight: 600;
+    color: hsl(210, 4%, 67%);
+    font-family: "Fraunces", sans-serif;
+    padding: 10px;
+}
+span {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 4px solid hsl(7, 99%, 70%);
+    border-radius: 4;
+}
+ #card-text {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    padding: 500px 100px 0px;
+    
+    text-align: center;
+}
+#card-text h1{
+    padding: 40px;
+    margin: auto;
+    text-align: center;
+}
+#card-text p{
+    padding-bottom: 50px;
+    margin: auto;
+    text-align: center;
+}
+.cherry {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    
+}
+.orange {
+    background-image: url("./images/desktop/image-photography.jpg");
+
+}
+
+  /* Client Testimonial styles */
+.ct-header{
+    text-align: center;
+    padding: 90px;
+    font-size: 20px;
+    font-family: "Barlow";
+    text-transform: uppercase;
+    color:  hsl(210, 4%, 67%);
+    letter-spacing: 0.1cm;
+}
+.client-cards {
+    display: flex;
+    padding: 100px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+ }
+ .client {
+    padding: 20px;
+ }
+ .client-image{
+    border-radius: 80px;
+    padding: 10px;
+ }
+ 
+ .client-text  p {
+    padding: 30px;
+    font-weight: 600;
+    font-family: "Barlow", sans-serif;
+    color: hsl(212, 27%, 19%);
+ }
+ .client-name {
+    font-size: 18px;
+    font-family: "Fraunces";
+ }
+ .client-title {
+    padding: 10px;
+    color: hsl(213, 9%, 39%);
+ }
+
+ /* Images Container */
+ .images {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+ }
+ .column {
+    display: flex;
+
+ }
+ .column > img {
+    width: 50%
+ }
+ /* Footer Styles  */
+ footer {
+    text-align: center;
+    background-color: hsl(187, 86%, 50%);
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+ }
+ .footer-title {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(169, 28%, 30%);
+ }
+ .footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+ }
+ .footer-links li {
+    padding: 30px;
+    text-align: center;
+    font-family: "Brawler", sans-serif;
+    font-weight: 400;
+    color: hsl(168, 34%, 41%);
+ }
+ .contacts > img {
+    padding: 20px;
+ }
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .motto {
+        padding: 50px;
+    }
+    .card{
+      flex-direction: column-reverse;
+      
+    }
+    .motto {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 90%;
+        font-family: 'Barlow';
+        letter-spacing: 0.1cm;
+        text-transform: uppercase;
+        font-weight: 600;
+        color:  hsl(0, 0%, 100%);
+        padding-top: 20px;
+    }
+    #cup-card {
+        display: flex;
+        flex-direction: column;
+    }
+    #card-text {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding-top: 300px;
+        margin: auto;
+        text-align: center;
+    }
+    #card-text h1{
+        padding: 15px;
+        margin: auto;
+        text-align: center;
+    }
+    #card-text p {
+        padding-bottom: 30px;
+    }
+    .card-text {
+        width: 100%;
+        padding: 20px;
+        font-size: 15px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    .card > img {
+        width: 100%;
+        height: 50%;
+    }
+   
+    
+    span {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+
+    .client-cards {
+        flex-direction: column;
+    }
+    
+    .images{
+        flex-direction: column;
+    }
+  }
