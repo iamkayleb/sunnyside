@@ -11,6 +11,7 @@ header {
     background-position: center;
     background-repeat: no-repeat ;
     background-size: cover;
+
 }
 
 nav {
@@ -23,7 +24,7 @@ nav {
 }
 .motto {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Barlow';
     letter-spacing: 0.1cm;
     text-transform: uppercase;
@@ -39,16 +40,19 @@ nav {
     color:hsl(0, 0%, 100%) ;
 }
 .nav-items {
-    display: flex;
-    list-style: none;
-    color:hsl(0, 0%, 100%) ;
-    
+    overflow: hidden;
+
 }
-.nav-item {
+a {
     padding: 10px;
     font-family: "Outfit", sans-serif;
+    font-size: 17px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: hsl(232, 10%, 55%);
 }
-.nav-item:hover {
+a:hover {
     background-color: white;
     border-radius: 20px;
     font-weight: 600;
@@ -60,7 +64,9 @@ nav {
     
 
 }
-
+.hamburger {
+    display: none;
+}
 /* Main Styles */
 .card {
     display: flex;
@@ -92,13 +98,7 @@ nav {
     font-family: "Fraunces", sans-serif;
     padding: 10px;
 }
-span {
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-bottom: 4px solid hsl(7, 99%, 70%);
-    border-radius: 4;
-}
+
  #card-text {
     background-repeat: no-repeat;
     background-position: center;
@@ -127,6 +127,14 @@ span {
 
 }
 
+span {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: "Fraunces", sans-serif;
+    border-bottom: 10px solid hsl(7, 99%, 70%);
+    border-radius: 10px;
+}
   /* Client Testimonial styles */
 .ct-header{
     text-align: center;
@@ -216,16 +224,12 @@ span {
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
-    .motto {
-        padding: 50px;
-    }
     .card{
       flex-direction: column-reverse;
       
     }
     .motto {
         text-align: center;
-        font-size: 40px;
         padding-bottom: 90%;
         font-family: 'Barlow';
         letter-spacing: 0.1cm;
@@ -239,21 +243,14 @@ span {
         flex-direction: column;
     }
     #card-text {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         width: 100%;
-        padding-top: 300px;
-        margin: auto;
-        text-align: center;
+        padding: 150px 0px 10px;
     }
     #card-text h1{
-        padding: 15px;
-        margin: auto;
         text-align: center;
     }
     #card-text p {
-        padding-bottom: 30px;
+        padding:0px  10px;
     }
     .card-text {
         width: 100%;
@@ -268,7 +265,15 @@ span {
         height: 50%;
     }
    
-    
+    .ct-header{
+        padding: 20px ;
+    }
+    .client-text  p {
+        padding: 4px;
+        font-weight: 600;
+        font-family: "Barlow", sans-serif;
+        color: hsl(212, 27%, 19%);
+     }
     span {
         font-size: 20px;
         font-weight: 600;
@@ -282,4 +287,47 @@ span {
     .images{
         flex-direction: column;
     }
-  }
+    .footer-links{
+        flex-direction: column;
+     }
+}
+@media screen and (max-width: 600px) {
+    .nav-items a{display: none;}
+    .nav-items a.hamburger {
+      float: right;
+      display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-items.responsive {
+        position: relative;
+        background-color: none;
+    }
+    .nav-items.responsive .hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+    }
+    .nav-items.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        background-color: white;
+        
+    }
+    .nav-items.responsive a:hover {
+        background-color: hsl(51, 100%, 49%);
+        border-radius: none;
+    }
+    .nav-items.responsive {
+        width: 100%;
+        padding-top: 50px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+  
